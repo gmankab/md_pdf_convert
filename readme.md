@@ -13,8 +13,9 @@ distrobox enter ubuntu -- python3 convert.py
 
 run on github actions
 
-1. clone repo
-2. put your .md files in md dir
-3. commit and push changes
-4. .pdf and .typ files will appear on releases page
+1. fork repo
+2. go to https://github.com/YOUR_USERNAME/md_pdf_convert/settings/actions -> workflow permissions -> click read and write permissions -> save
+3. put your .md files in md dir
+4. commit and push changes
+5. .pdf and .typ files will appear on releases page
 
