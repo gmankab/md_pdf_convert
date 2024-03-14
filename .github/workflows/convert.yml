@@ -1,0 +1,35 @@
+name: convert
+on: [push, pull_request]
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: set up python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - name: convert
+      run: |
+        curl -L github.com/jgm/pandoc/releases/download/3.1.12.2/pandoc-3.1.12.2-1-amd64.deb -o /tmp/pandoc.deb
+        sudo apt install texlive-latex-recommended texlive-fonts-recommended texlive-xetex fonts-open-sans /tmp/pandoc.deb
+        python convert.py
+        mkdir to_upload
+        cp -r md/* typ/* pdf/* to_upload
+    - name: upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: converted
+        path: |
+          md/
+          typ/
+          pdf/
+    - name: upload to releases
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: to_upload/*
+        tag: ${{ github.ref }}
+        overwrite: true
+        file_glob: true
+
