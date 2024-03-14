@@ -2,12 +2,23 @@
 
 ### run on local machine
 
-1. put your .md files in md dir
-2. [install distrobox](https://github.com/89luca89/distrobox#installation)
+1. [install distrobox](https://github.com/89luca89/distrobox#installation)
+2. clone repo:
+```shell
+git clone https://github.com/gmankab/md_pdf_convert
+```
+3. put your .md files in md dir
+4. create ubuntu distrobox:
 ```shell
 distrobox create -i docker.io/ubuntu:latest -n ubuntu
+```
+5. install dependencies:
+```shell
 curl -L github.com/jgm/pandoc/releases/download/3.1.12.2/pandoc-3.1.12.2-1-amd64.deb -o /tmp/pandoc.deb
 distrobox enter ubuntu -- sudo apt install texlive-latex-recommended texlive-fonts-recommended texlive-xetex fonts-open-sans /tmp/pandoc.deb
+```
+6. run converter:
+```shell
 distrobox enter ubuntu -- python3 convert.py
 ```
 
