@@ -1,10 +1,17 @@
-## contacts
+## Contacts
 
 - Telegram: [\@gmanka3](https://t.me/gmanka3)
 - Discord: \@gmanka
-- GitHub: [\@gmankab](https://github.com/gmankab)
+  GitHub: [\@gmankab](https://github.com/gmankab)
 
-## pet projects
+## Navigations
+
+- resume_en
+- resume_ru
+- pet_proj_en
+- pet_proj_ru
+
+## Pet-projects
 
 [anarchy_bot](https://github.com/gmankab/anarchy_bot) - telegram bot that can promote any user to admin, allows voting to mute users
 
