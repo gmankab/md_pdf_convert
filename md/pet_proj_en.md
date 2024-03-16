@@ -1,10 +1,10 @@
 ## Contacts
 
+- GitHub: [\@gmankab](https://github.com/gmankab)
 - Telegram: [\@gmanka3](https://t.me/gmanka3)
 - Discord: \@gmanka
-  GitHub: [\@gmankab](https://github.com/gmankab)
 
-## Navigations
+## Navigation
 
 - resume_en
 - resume_ru

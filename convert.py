@@ -8,7 +8,7 @@ import tarfile
 import shutil
 
 
-font_size = '9.6pt'
+font_size = '8.8pt'
 font = 'Inter'
 
 
@@ -49,7 +49,10 @@ def md_to_typ(
                 r'https:\/\/',
                 'https://',
             )
-        with target_file.open('w', encoding = 'utf-8') as file:
+        with target_file.open(
+            'w',
+            encoding='utf-8',
+        ) as file:
             file.write(additional_text + '\n' + output)
 
 
