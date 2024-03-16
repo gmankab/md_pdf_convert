@@ -12,7 +12,8 @@ jobs:
     - name: convert
       run: |
         curl -L github.com/jgm/pandoc/releases/download/3.1.12.2/pandoc-3.1.12.2-1-amd64.deb -o /tmp/pandoc.deb
-        sudo apt install texlive-latex-recommended texlive-fonts-recommended texlive-xetex fonts-open-sans /tmp/pandoc.deb
+        sudo apt update
+        sudo apt install -y texlive-latex-recommended texlive-fonts-recommended texlive-xetex fonts-open-sans /tmp/pandoc.deb
         python convert.py
         mkdir to_upload
         cp -r md/* typ/* pdf/* to_upload
