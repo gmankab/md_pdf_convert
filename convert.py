@@ -37,7 +37,7 @@ def main():
     convert(
         source_dir=typ_path,
         target_dir=pdf_path,
-        args=['--pdf-engine=xelatex', '-V' 'mainfont="OpenSans"',]
+        args=['--pdf-engine=xelatex', '-V' 'mainfont="OpenSans"']
     )
     
 
