@@ -6,10 +6,10 @@
 
 ## Navigation
 
-- resume_en
-- resume_ru
-- pet_proj_en
-- pet_proj_ru
+- [resume_en](https://github.com/gmankab/resume/tree/main/md/resume_en.md)
+- [resume_ru](https://github.com/gmankab/resume/tree/main/md/resume_ru.md)
+- [pet_proj_en](https://github.com/gmankab/resume/tree/main/md/pet_proj_en.md)
+- [pet_proj_ru](https://github.com/gmankab/resume/tree/main/md/pet_proj_ru.md)
 
 ## Pet-projects
 
